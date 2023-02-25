@@ -1,0 +1,170 @@
+{
+  "users": [
+    {
+      "name": "demo",
+      "email": "demo@demo.ru",
+      "password": "demo",
+      "id": "1"
+    },
+    {
+      "name": "oleg",
+      "email": "oleg@demo.ru",
+      "password": "oleg",
+      "id": "2"
+    },
+    {
+      "name": "vasya",
+      "email": "vasya@mail.ru",
+      "password": "vasya",
+      "id": "9dfibuwl6ml9h34"
+    },
+    {
+      "name": "petya",
+      "email": "petya@mail.ru",
+      "password": "petya",
+      "id": "9dfi7qwl6mlct3m"
+    },
+    {
+      "name": "Gena",
+      "email": "gena@gena.ru",
+      "password": "gena",
+      "id": "1pzx2ycl73ufun9"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Банк",
+      "user_id": "1",
+      "id": "1"
+    },
+    {
+      "name": "Магазин",
+      "user_id": "1",
+      "id": "2"
+    },
+    {
+      "name": "Бизнес",
+      "user_id": "1",
+      "id": "3"
+    },
+    {
+      "name": "Ежедневные расходы",
+      "user_id": "1",
+      "id": "9dficc8l6trgud4"
+    },
+    {
+      "name": "На карманные расходы",
+      "user_id": "1",
+      "id": "1pzx4jsl73tknoe"
+    },
+    {
+      "name": "Счет oleg",
+      "user_id": "2",
+      "id": "1pzx1ucl79bwsxj"
+    },
+    {
+      "name": "Концерты",
+      "user_id": "1",
+      "id": "1pzx1awl7bx0h0d"
+    }
+  ],
+  "transactions": [
+    {
+      "account_id": "1",
+      "created_at": "2019-09-15 10:24:02",
+      "id": "1",
+      "name": "Кредит",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-17 15:53:02",
+      "id": "2",
+      "name": "Баланс на дебетовке",
+      "sum": 3200,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 14:47:02",
+      "id": "6",
+      "name": "Мясо",
+      "sum": 600,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-27 13:27:02",
+      "id": "7",
+      "name": "Долг в банк",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-12-27 13:27:02",
+      "id": "11",
+      "name": "Прибыль с банка",
+      "sum": 1500000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "12",
+      "name": "Прибыль с магазина",
+      "sum": 300000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-15 13:27:02",
+      "id": "14",
+      "name": "На охрану",
+      "sum": 60000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "id": "9dfi51ol6tt9kfx",
+      "type": "income",
+      "name": "На еду",
+      "sum": 500,
+      "account_id": "9dficc8l6trgud4",
+      "user_id": "1",
+      "created_at": "2022-08-14T21:00:14.396Z"
+    },
+    {
+      "id": "1pzx3ysl73tl7mm",
+      "type": "expense",
+      "name": "Молоко",
+      "sum": 100,
+      "account_id": "9dficc8l6trgud4",
+      "user_id": "1",
+      "created_at": "2022-08-21T21:06:59.421Z"
+    },
+    {
+      "id": "1pzxdv4l784k1tw",
+      "type": "income",
+      "name": "Овации",
+      "sum": 100,
+      "user_id": "1",
+      "created_at": "2022-08-24T21:25:05.731Z"
+    },
+    {
+      "id": "1pzxbc4l784m2fw",
+      "type": "income",
+      "name": "Овации",
+      "sum": 100,
+      "user_id": "1",
+      "created_at": "2022-08-24T21:26:39.835Z"
+    }
+  ]
+}

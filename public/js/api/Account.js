@@ -3,11 +3,13 @@
  * Управляет счетами пользователя.
  * Имеет свойство URL со значением '/account'
  * */
-class Account extends Entity {
+ class Account extends Entity {
+
+  static URL = '/account';
   /**
    * Получает информацию о счёте
    * */
   static get(id = '', callback){
-
+    this.list({id: id}, callback);
   }
 }

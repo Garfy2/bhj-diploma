@@ -3,7 +3,7 @@
  * кнопки скрытия/показа колонки в мобильной версии сайта
  * и за кнопки меню
  * */
-class Sidebar {
+ class Sidebar {
   /**
    * Запускает initAuthLinks и initToggleButton
    * */
@@ -14,11 +14,14 @@ class Sidebar {
 
   /**
    * Отвечает за скрытие/показа боковой колонки:
-   * переключает два класса для body: sidebar-open и sidebar-collapse
+   * переключает два класса для app: sidebar-open и sidebar-collapse
    * при нажатии на кнопку .sidebar-toggle
    * */
   static initToggleButton() {
-
+    const sideBarBtn = document.querySelector('.sidebar-toggle');
+    sideBarBtn.addEventListener('click', () => {
+      document.querySelector('.app').classList.toggle('sidebar-open');
+    });
   }
 
   /**
@@ -29,6 +32,21 @@ class Sidebar {
    * выходу устанавливает App.setState( 'init' )
    * */
   static initAuthLinks() {
-
+    const sideBarMenu = document.querySelector('.sidebar-menu');
+    sideBarMenu.addEventListener('click', (e) => {
+      if (e.target.closest('.menu-item')) {
+        const menuItem = e.target.closest('.menu-item');
+        if (menuItem.classList.contains('menu-item_login')) {
+          App.getModal('login').open();
+        } else if (menuItem.classList.contains('menu-item_register')) {
+          App.getModal('register').open();
+        } else if (menuItem.classList.contains('menu-item_logout')){
+          User.logout(() => {
+            User.unsetCurrent();
+            App.setState('init');
+          });
+        };
+      }
+    });
   }
 }
